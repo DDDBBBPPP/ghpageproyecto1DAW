@@ -1,0 +1,78 @@
+/* Me dio muchos problemas que el footer no empezara abajo del todo, y tuve que jugar con esto, con el main añadiendo el flex-grow y 
+el bottom 0px del footer para que cuadrara, todo era por añadir el position:fixed en el header. */
+html,
+body {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* Aquí el top 0 fue clave para que me rellenara arriba */
+header {
+    top:0px;
+    background-color: #555;
+    color: white;
+    padding: 10px 0;
+    position:fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 100;
+    
+}
+/* los 69 px es exacto los 20 de padding por los dos lados y 29 que me ocupaba el header, tuve que mirar la consola inspeccionando con el F12*/
+main{
+    margin-top: 69px;
+    display:flex;
+    flex-grow:1;
+    flex-direction: column;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 5px 10px;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* Para que se vea la vista activa en la navBar */
+.active {
+    font-weight: bold;
+    color: rgba(254, 215, 102, 1);
+}
+/* Aqui uso la pseudoclase hover */
+a:hover {
+    font-weight: bold;
+    color: rgba(254, 215, 102, 0.4);
+}
+
+
+footer {
+    bottom:0px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

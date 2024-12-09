@@ -1,0 +1,75 @@
+
+.fondo{
+    background:url("media/fondoform.jpg") no-repeat;
+}
+
+
+/* Algunoos estilos al contenedor, como esa opacidad para que se vea un poco la hamburguesa de fondo. */
+.contenedorFormulario {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #555;
+    opacity: 0.95;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .tituloForm {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgba(254, 215, 102, 1);
+  }
+  
+  .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+
+  }
+  
+  .nombre,
+  .numPersonas,
+  .dia,
+  .hora,
+  .comentario {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .comentario {
+    height: 100px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* Estilos del boton de envio, y su hover después. Algunas funcionalidades como que al ponerlo encima cambie el cursor. */
+  .botonEnvio {
+    background-color: rgb(179, 144, 39);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .botonEnvio:hover {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  

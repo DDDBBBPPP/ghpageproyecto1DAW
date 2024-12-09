@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Head idéntico en las 3 vistas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34 Grill - Inicio</title>
+    <!-- Aquí enlazo siempre con el css general y el suyo -->
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- En cada html importo la fuente que he escogido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Barra nav idéntica en los 3 html, solo cambia donde pongo la clase "active". Estilos aplicados al header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="formulario.html">Reserva Ya!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Primera seccion -->
+        <section>
+            <div class="presentacion">
+                <h1>Un poco de mí</h1>
+                <p>
+                    <b> Me llamo David, tengo 27 años y vengo desde Colmenar, he vivido muchos años en Málaga aunque podría decirse que me he criado en La Línea. He hecho muchas cosas antes de llegar aquí, pero me alegra haber empezado hace un par de meses.</b>
+                </p>
+
+            </div>
+        </section>
+        <!-- La segunda, en index,css comento algo más de como se hizo. -->
+        <section class="mapaVideo">
+            <h2 id="mapaVideoTit">Aquí estoy casi todos los días</h2>
+            <div>
+                <!-- El video y el mapa -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.250350392302!2d-4.557037723485498!3d36.740561471058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f10963ce0f3d%3A0x310ae7d4bb2e8f7b!2sCPIFP%20Alan%20Turing!5e0!3m2!1ses!2ses!4v1733627197975!5m2!1ses!2ses"  loading="lazy" class="mapa"></iframe>
+
+
+                <iframe src="https://www.youtube.com/embed/J_hHOE1IYRw?si=nWjPw_hO8ulPDH0c" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+
+            </div>
+        </section>
+        <!-- Introducimos el restaurante -->
+        <section class="grillInicio">
+            <div>
+                <h2>También paso mucho tiempo aquí.</h2>
+                <p>
+                   Conozca 34 Grill, la hamburguesería puntera de la costa del sol. Si quiere más información, acceda ya a nuestro menú!<br> Teléfono: +34 69851452595  Dirección:C/ Arrierito, 127, 20645 Estepona, Marruecos.
+                </p>
+                <!-- Te lleva también al segundo html -->
+                <div class="menuBotonContainer">
+                    <a href="menu.html" class="menu">Ver Menú</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 34 Grill. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

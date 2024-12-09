@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34 Grill -Formulario</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="formulario.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Aquí pongo la imagen de fondo -->
+    <main class="fondo">
+
+        <!-- Aquí está el formulario con los campos requeridos Primero el contenedor de ese formulario -->
+        <div class="contenedorFormulario">
+            <h1 class="tituloForm">¡Reserva tu Mesa!</h1>
+            <!-- Aquí ya esta el formulario con los elementos -->
+            <form action="mailto:34Grillsl@business.com" class="formulario">
+
+                <label for="nombre">Nombre Completo *</label>
+                <input type="text" id="nombre" name="nombre" class="nombre" required>
+
+                <label for="personas">Número de personas *</label>
+                <input type="number" id="personas" name="personas" class="numPersonas" min="1" required>
+
+                <label for="fecha">Fecha de la reserva *</label>
+                <input type="date" id="fecha" name="fecha" class="dia" required>
+
+                <label for="hora">Hora de la reserva *</label>
+                <input type="time" id="hora" name="hora" class="hora" required>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="newsletter"> Deseo recibir noticias de 34 Grill
+                </label>
+
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" name="comentarios" class="comentario"
+                    placeholder="Escribe aquí tus comentarios..."></textarea>
+
+                <button type="submit" class="botonEnvio">Enviar Reserva</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 34 Grill. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
